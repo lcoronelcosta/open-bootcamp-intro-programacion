@@ -1,6 +1,8 @@
 import clases.Coche;
+import clases.Persona;
 
 import static java.lang.System.out;
+import static java.lang.System.setOut;
 
 public class Main {
 
@@ -15,7 +17,10 @@ public class Main {
         System.out.println("El coche actualmente tiene "+coche.getPuertas()+" puertas");*/
 
         //Ejercicio Tema 4
-        tema4();
+        //tema4();
+
+        //Ejercicio Tema 8
+        tema8();
 
 
     }
@@ -73,5 +78,13 @@ public class Main {
                 System.out.println("Nombre de estacion no valida");
         }
 
+    }
+
+    private static void tema8(){
+        Persona persona = new Persona();
+        persona.setEdad(30);
+        persona.setNombre("Luis Coronel Acosta");
+        persona.setTelefono("593969458949");
+        System.out.println("Nombre:" + persona.getNombre() + " Edad: " + persona.getEdad() + " Telefono: " + persona.getTelefono());
     }
 }
