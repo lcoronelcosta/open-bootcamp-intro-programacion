@@ -1,5 +1,7 @@
+import clases.Cliente;
 import clases.Coche;
 import clases.Persona;
+import clases.Trabajador;
 
 import static java.lang.System.out;
 import static java.lang.System.setOut;
@@ -20,7 +22,10 @@ public class Main {
         //tema4();
 
         //Ejercicio Tema 8
-        tema8();
+        //tema8();
+
+        //Ejercicio Tema 9
+        tema9();
 
 
     }
@@ -86,5 +91,23 @@ public class Main {
         persona.setNombre("Luis Coronel Acosta");
         persona.setTelefono("593969458949");
         System.out.println("Nombre:" + persona.getNombre() + " Edad: " + persona.getEdad() + " Telefono: " + persona.getTelefono());
+    }
+
+    private static void tema9(){
+        System.out.println("---Clase Cliente---");
+        Cliente cliente = new Cliente();
+        cliente.setEdad(30);
+        cliente.setNombre("Luis Coronel");
+        cliente.setTelefono("593969458949");
+        cliente.setCredito(5000);
+        System.out.println("Nombre: "+cliente.getNombre()+" Edad: "+cliente.getEdad()+" Telefono: "+cliente.getTelefono()+" Credito: "+cliente.getCredito());
+        System.out.println("---Clase Trabajador---");
+        Trabajador trabajador = new Trabajador();
+        trabajador.setEdad(32);
+        trabajador.setNombre("Felipe Acosta");
+        trabajador.setTelefono("5939123456789");
+        trabajador.setSalario(2500);
+        System.out.println("Nombre: "+trabajador.getNombre()+" Edad: "+trabajador.getEdad()+" Telefono: "+trabajador.getTelefono()+" Credito: "+trabajador.getSalario());
+
     }
 }
